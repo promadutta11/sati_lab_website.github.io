@@ -1654,7 +1654,7 @@
     background-color: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(8px);
     border-radius: 0.75rem;
-    height: auto%;
+    height: auto;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   }
   
@@ -1663,6 +1663,7 @@
     flex-direction: column;
     gap: 1rem;
   }
+
   
   .form-row {
     display: grid;
@@ -1755,11 +1756,38 @@
   }
   
 
-  
-  @media (min-width: 768px) {
-    .footer-container {
-      flex-direction: row;
-      justify-content: space-between;
-      height: 6rem;
-    }
+
+  /* ---------------- Contact Section Mobile Fixes ---------------- */
+
+/* Make sure contact items wrap correctly */
+.contact-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Form + Info default flex sizing */
+.contact-form-container,
+.contact-info {
+  flex: 1 1 300px;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 767px) {
+  .contact-container {
+    flex-direction: column; /* stack vertically */
   }
+
+  .contact-form-container {
+    order: -1; /* show the form first on mobile */
+  }
+}
+
+/* Extra small screens: stack first/last name fields */
+@media (max-width: 480px) {
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
