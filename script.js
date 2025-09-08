@@ -1,3 +1,4 @@
+95% of storage used … If you run out of space, you can't save to Drive, back up Google Photos, or use Gmail. Get 100 GB of storage for $1.99 $0.49/month for 3 months.
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile menu toggle
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
