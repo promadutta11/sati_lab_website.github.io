@@ -341,7 +341,15 @@
     height: 100%;
     object-fit: cover;
   }
-  
+
+  /* The caption itself */
+.image-caption {
+  margin-top: 8px;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--gray-500);
+}
   .hero-gradient-bottom {
     position: absolute;
     bottom: 0;
@@ -1791,3 +1799,4 @@
     gap: 1rem;
   }
 }
+
